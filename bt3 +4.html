@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let n = 1; n <= 5; n++) {
+        for (let i = 1; i <= n; i++) {
+            document.write("*");
+        }
+        for (let j = 1; j <= 5; j++) {
+            document.write("");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>' + '<br>');
+
+    for (let n = 5; n >= 1; n--) {
+        for (let i = 1; i <= n; i++) {
+            document.write("*");
+        }
+        for (let j = 1; j <= 5; j++) {
+            document.write("");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>' + '<br>');
+
+    for (let n = 5; n >= 1; n--) {
+        for (let j = 1; j <= n; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let i = 1; i <= 6-n; i++) {
+            document.write("*");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>' + '<br>');
+
+    for (let n = 0; n < 5; n++) {
+        for (let j = 1; j <= n; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let i = 1; i <= 5-n; i++) {
+            document.write("*");
+        }
+        document.write('<br>');
+    }
+    document.write('<br>' + '<br>');
+
+
+    for (let c = 1; c <= 21; c++) {
+        document.write("*");
+    } document.write('<br>');
+
+    for (let d = 1; d <= 5; d++) {
+       document.write("*");
+       for (let e = 1; e <= 39; e++) {
+           document.write("&nbsp");
+       }
+       document.write("*");
+       document.write('<br>');
+    }
+    for (let c = 1; c <= 21; c++) {
+        document.write("*");
+    } document.write('<br>');
+
+    document.write('<br>' + '<br>')
+
+
+
+
+
+</script>
+</body>
+</html>

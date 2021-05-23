@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <p>nhập số liệu cần tính</p>
+  <input type="number" id="solieu">
+  <button type="button" onclick="dosome()">tính</button> <button type="reset" onclick="ketthuc()">reset</button>
+  <div id="show"></div>
+<script>
+  function dosome() {
+
+    let num = +document.getElementById("solieu").value;
+    let solan = 1;
+    let a = 1;
+    for (; solan <= num; solan++) {
+      a = solan * a;
+    }
+    document.getElementById("show").innerHTML = a;
+  }
+
+  function ketthuc() {
+    document.getElementById("show").innerHTML = '';
+  }
+</script>
+</form>
+</body>
+</html>

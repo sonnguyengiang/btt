@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <button type="button" onclick="dosomeone()">in dãy</button> <button type="reset" onclick="dosomeonea()">reset</button>
+     <div id="show"></div>
+<script>
+function dosomeone() {
+    let solan = parseInt(prompt("nhập số lượng muốn hiện thị > 1(lưu ý giá trị sẽ bị tăng lên 2)"));
+    let hienthi = 1;
+    let a = 0;
+    let b = 1;
+    let c;
+    document.getElementById("show").innerHTML += '1. ' + a + '<br>';
+    document.getElementById("show").innerHTML += '2. ' + b + '<br>';
+    for (;hienthi <= solan; hienthi++) {
+        c = a + b;
+        a = b;
+        b = c;
+        document.getElementById("show").innerHTML += hienthi + 2 + '. ' + c + '<br>';
+    }
+}
+function dosomeonea() {
+    document.getElementById("show").innerHTML ='';
+}
+</script>
+</form>
+</body>
+</html>

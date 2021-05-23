@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi kép</title>
+</head>
+<body>
+<script>
+    var money = parseInt(prompt("số tiền ban đầu"));
+    var months = parseInt(prompt("số tháng"));
+    var phantram = parseInt(prompt("lãi xuất(%)"));
+    var laixuat = phantram / 100;
+    let phantu = money * (( 1 + laixuat)**months) * laixuat;
+    let phanmau = (1 + laixuat)**months - 1;
+    let A = phantu / phanmau;
+    alert(A);
+
+</script>
+</body>
+</html>
